@@ -1,0 +1,15 @@
+{
+    "name": "Southeast Street",
+    "short_name": "street",
+    "theme_color": "#ffe08a",
+    "backgorund_color": "#ffe08a",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [{
+        "src": "./images/logo.png",
+        "type": "image.png",
+        "sizes": "512x512"
+    }]
+}

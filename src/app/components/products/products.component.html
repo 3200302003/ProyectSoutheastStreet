@@ -1,0 +1,28 @@
+<p>las cantidad de productos{{myshoppingCart.length}}</p>
+<p>
+  total {{total}}
+</p>
+
+<p>
+  Today: {{today| date:'fullDate'}}
+</p>
+<p>
+  otherDate: {{date| date:'yyyy.dd.MM'}}
+</p>
+<p>
+  today {{today | timeAgo}}
+</p>
+
+<!-- //uppercase- Todo en mayuscula -->
+<p>
+  {{"Hola Como estas "| uppercase}}
+</p>
+
+<div class="products--grid">
+  <app-product
+    [product]="product"
+    *ngFor="let product of products"
+    (addProduct)="onAddToShoppingCart($event)"
+    >
+  </app-product>
+</div>

@@ -1,0 +1,10 @@
+<!-- <img width="200" [src]="product.img" alt=""> -->
+<!-- <app-img [img]="product.image"></app-img> -->
+<app-img [img]="product.img"></app-img>
+<h2>{{product.price | currency: 'MXN'}}</h2>
+<!-- <p>{{product.title | reverse}}</p> -->
+<p>{{product.name | reverse}}</p>
+<p appHighLight>{{product.description }}</p>
+<button (click)="onAddToCart()">Add Carrito</button>
+
+<button class="p-button-sm" type="button" pButton label="primeNG"></button>
